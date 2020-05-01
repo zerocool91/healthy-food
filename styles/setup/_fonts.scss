@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+@font-face {
+	font-family: 'Gabelisa';
+	src:url('../font/Gabelisa.ttf.woff') format('woff'),
+			url('../font/Gabelisa.ttf.svg#Gabelisa') format('svg'),
+			url('../font/Gabelisa.ttf.eot'),
+			url('../font/Gabelisa.ttf.eot?#iefix') format('embedded-opentype'); 
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin regular{
+	font-family: 'Playfair Display', serif;
+	font-weight: normal;
+}
+
+@mixin bold{
+	font-family: 'Playfair Display', serif;
+	font-weight: bold;
+}
