@@ -7,10 +7,11 @@ body
 	max-width: 1326px
 	width: 100%
 	margin: 0 auto
+	position: relative
 
 header
 	position: absolute
-	top: 100px
+	top: 61px
 	width: 100%
 	z-index: 99
 
@@ -20,9 +21,7 @@ header
 	list-style: none
 	display: flex
 	a
-		+bold
-		font-size: 17px
-		text-transform: uppercase
+		+fs-small-bold
 		letter-spacing: 3.33px
 		padding: 10px 20px
 		color: #ffffff
@@ -31,12 +30,11 @@ header
 			color: $colorTitle
 
 .hero
-	height: 100vh
+	height: 824/16*1rem
 	background: radial-gradient(rgba(98,97,146,1), rgba(63,62,101,1))
 	+flex
 	flex-direction: column
 	justify-content: center
-	position: relative
 	h1
 		+title
 		max-width: 395px
@@ -49,7 +47,7 @@ header
 
 .our-story
 	text-align: center
-	padding: 96px 0
+	padding: 138px 0 113px
 	&__content
 		margin: 34px auto 60px
 		max-width: 1014px
@@ -70,30 +68,32 @@ header
 		font-weight: 400
 		line-height: 100px
 		text-transform: none
+		letter-spacing: 6px
 	&_small
 		max-width: 430px
 		margin: 0
-		font-size: 29px
+		font-size: $fsSmallSectionTitle
+		letter-spacing: 1.75px
 		.beauty-title
 			font-size: 63px
+			letter-spacing: 3.75px
 
 .content
-	font-size: 21px
+	font-size: $fsContent
 	+regular
-	line-height: 33px
+	line-height: 33.33px
 	color: $colorTextPrimary
 
 .button-o
 	text-decoration: none
-	font-size: 17px
-	+bold
+	+fs-small-bold
 	line-height: 33px
-	text-transform: uppercase
-	letter-spacing: 3px
+	letter-spacing: 2.67px
 	color: $colorTextPrimary
 	padding: 22px 38px
 	border: 1px solid rgba($colorTitle, 0.35)
 	border-radius: 5px
+	line-height: 33.33px
 	&:hover
 		background: $colorTitle
 		color: #ffffff
@@ -101,15 +101,16 @@ header
 .feast
 	background: url('../img/feast-bg.png') center
 	background-size: cover
-	padding: 275px 0
+	padding: 262px 0 250px
 	text-align: center
 	&__section-title
-		max-width: 557px
+		max-width: 620px
 		color: #ffffff
 		font-size: 33px
 		+bold
 		text-transform: uppercase
-		position: relative		
+		position: relative
+		letter-spacing: 5px
 	.feast__border
 		+flex
 		max-width: 557px
@@ -121,38 +122,45 @@ header
 			background: #ebae4c
 		.img
 			flex-shrink: 0
-			margin: 50px 25px
+			margin: 31px 30px
 
 .menu
 	padding: 106px 0
+	.section-title_small
+		margin-top: 40px
 	img
 		width: 100%
 		height: auto
+	&-list
+		margin-top: 10px
 	&__item
 		+flex
 		align-items: start
-		margin-top: 45px
+		margin-bottom: 42px
 	&__title
-		font-size: 25px
+		font-size: $fsMenuTitle
 		+bold
 		color: #2c2c2c
 		margin-top: 0
+		margin-bottom: 15px
+		letter-spacing: 1.8px
 	&__description
 		margin: 0
 		max-width: 360px
-		font-size: 17px
+		font-size: $fsSmall
 		font-weight: 400
 		color: #717171
 	&__price
 		color: $colorTitle
-		font-size: 25px
+		font-size: $fsMenuTitle
 		font-weight: 700
 		letter-spacing: 1.5px
+		text-transform: uppercase
 
 .background
 	background: url('../img/events-bg.png') no-repeat center right
 	background-size: contain
-	padding: 100px 0
+	padding: 68px 0 68px 78px
 
 .reservation
 	text-align: center
@@ -168,6 +176,8 @@ header
 		input
 			padding: 25px
 			min-width: 320px
+			font-size: $fsContent
+			color: #3d3d3d
 			margin: 10px
 			border: 1px solid #bebebe
 			border-radius: 5px
@@ -179,6 +189,7 @@ header
 			margin: 10px
 			border: 1px solid $colorTitle
 			border-radius: 5px
+			text-transform: uppercase
 			+bold
 			color: white
 			background: $colorTitle
@@ -203,7 +214,7 @@ footer
 		margin-top: 85px
 		+flex
 		.copyright
-			font-size: 17px
+			font-size: $fsSmall
 			text-transform: uppercase
 			color: #ffffff
 		.social-button
