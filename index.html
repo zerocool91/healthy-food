@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Healthy food</title>
 	<link rel="stylesheet" href="styles/style.min.css">
 </head>
+
 <body>
 	<header>
 		<div class="grid-container">
@@ -28,14 +30,18 @@
 	<main>
 		<section class="hero">
 			<div class="wrapper">
-				<h1>Breakfast Time</h1>
+				<div class="decorative waffel"></div>
+				<div class="decorative tomato"></div>
+				<h1 class="main-title">Breakfast Time</h1>
 			</div>
 		</section>
 
 		<section class="our-story">
 			<div class="wrapper">
-				<h2 class="section-title">Our <span class="beauty-title">Story</span></h2>
-				<p class="content our-story__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+				<h2 class="section-title">Our <div class="beauty-title">Story</div></h2>
+				<p class="content our-story__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+					viverra maecenas
 					accumsan lacus vel facilisis. </p>
 				<a href="#" class="button-o">Read more</a>
 			</div>
@@ -50,23 +56,89 @@
 			</div>
 		</section>
 
-		<section class="menu"><div class="grid-container">
-			<div class="grid-x grid-margin-x grid-margin-y align-justify">
-				<div class="cell large-5"><img src="img/menu-image.png" alt="breakfast"></div>
-				<div class="cell large-6">
-					<h2 class="section-title menu__section-title">from the menu <span class="beauty-title">Special offers</span></h2>
-					<div class="menu__item">
-						<div class="menu__content">
-							<h3 class="menu__title">Royal breakfast</h3>
-							<p class="menu__description">Fried eggs, fried bacon, toast, fresh tomato salad, cup of coffee or tea</p>
+		<section class="menu">
+			<div class="grid-container">
+				<div class="grid-x grid-margin-x grid-margin-y align-justify">
+					<div class="cell large-5"><img src="img/menu-image.png" alt="breakfast"></div>
+					<div class="cell large-6">
+						<h2 class="section-title section-title_small">from the menu <div class="beauty-title">Special offers</div>
+						</h2>
+						<div class="menu__item">
+							<div class="menu__content">
+								<h3 class="menu__title">Royal breakfast</h3>
+								<p class="menu__description">Fried eggs, fried bacon, toast, fresh tomato salad, cup of coffee or tea
+								</p>
+							</div>
+							<div class="menu__price">$15</div>
 						</div>
-						<div class="menu__price">$15</div>
+						<div class="menu__item">
+							<div class="menu__content">
+								<h3 class="menu__title">Royal breakfast</h3>
+								<p class="menu__description">Fried eggs, fried bacon, toast, fresh tomato salad, cup of coffee or tea
+								</p>
+							</div>
+							<div class="menu__price">$15</div>
+						</div>
+						<div class="menu__item">
+							<div class="menu__content">
+								<h3 class="menu__title">Royal breakfast</h3>
+								<p class="menu__description">Fried eggs, fried bacon, toast, fresh tomato salad, cup of coffee or tea
+								</p>
+							</div>
+							<div class="menu__price">$15</div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div></section>
+		</section>
 
+		<section class="events">
+			<div class="grid-container">
+				<div class="grid-x background">
+					<div class="cell large-6">
+						<h2 class="section-title section-title_small">Catering <div class="beauty-title">Social Events</div></h2>
+						<p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="reservation">
+			<h2 class="section-title section-title_small">Reservation <div class="beauty-title">Book your table</div></h2>
+
+			<form action="#" class="reservation-form">
+				<input type="text" placeholder="Name">
+				<input type="text" placeholder="Email">
+				<input type="text" placeholder="Date">
+				<input type="text" placeholder="Time">
+				<input type="text" placeholder="People">
+				<button class="submit-button">Find a table</button>
+
+			</form>
+		</section>
 	</main>
-
+	<footer>
+		<div class="logo">
+			<img src="img/logo.png" alt="Site logo">
+		</div>
+		<div class="adress">
+			<img src="img/location_icon.png" alt="location logo">
+			<div class="footer-content">Main road, building name, country</div>
+		</div>
+		<div class="email">
+			<img src="img/email.png" alt="email logo">
+			<div class="footer-content">info@companyname.com</div>
+		</div>
+		<div class="wrapper copyright-and-social">
+			<div class="copyright">© Company Name 2016. All rights reserved.</div>
+			<div class="social">
+				<span class="social-button"></span>
+				<span class="social-button"></span>
+				<span class="social-button"></span>
+				<span class="social-button"></span>
+			</div>
+		</div>
+	</footer>
 </body>
+
 </html>

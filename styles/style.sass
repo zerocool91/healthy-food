@@ -20,19 +20,20 @@ header
 	list-style: none
 	display: flex
 	a
-		+regular
+		+bold
 		font-size: 17px
-		font-weight: 700
 		text-transform: uppercase
 		letter-spacing: 3.33px
 		padding: 10px 20px
 		color: #ffffff
 		text-decoration: none
+		&:hover
+			color: $colorTitle
 
 .hero
 	height: 100vh
 	background: radial-gradient(rgba(98,97,146,1), rgba(63,62,101,1))
-	display: flex
+	+flex
 	flex-direction: column
 	justify-content: center
 	position: relative
@@ -43,6 +44,8 @@ header
 		font-size: 116px
 		text-align: right
 		margin-left: 155px
+		position: relative
+		z-index: 1
 
 .our-story
 	text-align: center
@@ -56,7 +59,7 @@ header
 	margin: 0 auto
 	color: $colorTextPrimary
 	font-size: 42px
-	font-weight: 700
+	+bold
 	line-height: 45.83px
 	text-transform: uppercase
 	letter-spacing: 2.5px
@@ -66,17 +69,24 @@ header
 		font-size: 100px
 		font-weight: 400
 		line-height: 100px
-		letter-spacing: 6px
+		text-transform: none
+	&_small
+		max-width: 430px
+		margin: 0
+		font-size: 29px
+		.beauty-title
+			font-size: 63px
 
 .content
 	font-size: 21px
-	font-weight: 400
+	+regular
 	line-height: 33px
+	color: $colorTextPrimary
 
 .button-o
 	text-decoration: none
 	font-size: 17px
-	font-weight: 700
+	+bold
 	line-height: 33px
 	text-transform: uppercase
 	letter-spacing: 3px
@@ -84,6 +94,9 @@ header
 	padding: 22px 38px
 	border: 1px solid rgba($colorTitle, 0.35)
 	border-radius: 5px
+	&:hover
+		background: $colorTitle
+		color: #ffffff
 
 .feast
 	background: url('../img/feast-bg.png') center
@@ -94,14 +107,13 @@ header
 		max-width: 557px
 		color: #ffffff
 		font-size: 33px
-		font-weight: 700
+		+bold
 		text-transform: uppercase
 		position: relative		
 	.feast__border
+		+flex
 		max-width: 557px
 		margin: 0 auto
-		display: flex
-		align-items: center
 		.border
 			display: inline-block
 			width: 100%
@@ -116,22 +128,17 @@ header
 	img
 		width: 100%
 		height: auto
-	&__section-title
-		max-width: 485px
-		margin: 0
-		font-size: 29px
-		.beauty-title
-			font-size: 63px
 	&__item
-		display: flex
-		justify-content: space-between
+		+flex
 		align-items: start
+		margin-top: 45px
 	&__title
 		font-size: 25px
-		font-weight: 700
+		+bold
 		color: #2c2c2c
 		margin-top: 0
 	&__description
+		margin: 0
 		max-width: 360px
 		font-size: 17px
 		font-weight: 400
@@ -141,3 +148,69 @@ header
 		font-size: 25px
 		font-weight: 700
 		letter-spacing: 1.5px
+
+.background
+	background: url('../img/events-bg.png') no-repeat center right
+	background-size: contain
+	padding: 100px 0
+
+.reservation
+	text-align: center
+	padding: 118px
+	.section-title
+		margin: 0 auto
+	&-form
+		+flex
+		flex-wrap: wrap
+		max-width: 784px
+		margin: 0 auto
+		justify-content: center
+		input
+			padding: 25px
+			min-width: 320px
+			margin: 10px
+			border: 1px solid #bebebe
+			border-radius: 5px
+			&:focus
+				border: 1px solid $colorTitle
+		.submit-button
+			padding: 25px
+			min-width: 372px
+			margin: 10px
+			border: 1px solid $colorTitle
+			border-radius: 5px
+			+bold
+			color: white
+			background: $colorTitle
+			cursor: pointer
+			&:hover
+				background: #ffffff
+				color: $colorTextPrimary
+
+footer
+	text-align: center
+	background: url('../img/footer-bg.png') center center
+	background-size: cover
+	padding: 105px 0 28px
+	.footer-content
+		color: #fff
+		font-size: 21px
+		text-transform: capitalize
+	.adress
+		margin-top: 56px
+		margin-bottom: 30px
+	.copyright-and-social
+		margin-top: 85px
+		+flex
+		.copyright
+			font-size: 17px
+			text-transform: uppercase
+			color: #ffffff
+		.social-button
+			display: inline-block
+			width: 29px
+			height: 29px
+			border-radius: 50%
+			background: #ffffff
+			&:not(:last-child)
+				margin-right: 12px

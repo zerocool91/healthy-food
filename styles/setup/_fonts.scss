@@ -10,17 +10,3 @@
 	font-style: normal;
 }
 
-@mixin regular{
-	font-family: 'Playfair Display', serif;
-	font-weight: normal;
-}
-
-@mixin bold{
-	font-family: 'Playfair Display', serif;
-	font-weight: bold;
-}
-
-@mixin title {
-	font-family: 'Gabelisa';
-	font-weight: normal;
-}
