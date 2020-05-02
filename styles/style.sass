@@ -51,7 +51,7 @@ header
 		margin: 34px auto 60px
 		max-width: 1014px
 
-h2
+.section-title
 	max-width: 320px
 	margin: 0 auto
 	color: $colorTextPrimary
@@ -84,3 +84,60 @@ h2
 	padding: 22px 38px
 	border: 1px solid rgba($colorTitle, 0.35)
 	border-radius: 5px
+
+.feast
+	background: url('../img/feast-bg.png') center
+	background-size: cover
+	padding: 275px 0
+	text-align: center
+	&__section-title
+		max-width: 557px
+		color: #ffffff
+		font-size: 33px
+		font-weight: 700
+		text-transform: uppercase
+		position: relative		
+	.feast__border
+		max-width: 557px
+		margin: 0 auto
+		display: flex
+		align-items: center
+		.border
+			display: inline-block
+			width: 100%
+			height: 1px
+			background: #ebae4c
+		.img
+			flex-shrink: 0
+			margin: 50px 25px
+
+.menu
+	padding: 106px 0
+	img
+		width: 100%
+		height: auto
+	&__section-title
+		max-width: 485px
+		margin: 0
+		font-size: 29px
+		.beauty-title
+			font-size: 63px
+	&__item
+		display: flex
+		justify-content: space-between
+		align-items: start
+	&__title
+		font-size: 25px
+		font-weight: 700
+		color: #2c2c2c
+		margin-top: 0
+	&__description
+		max-width: 360px
+		font-size: 17px
+		font-weight: 400
+		color: #717171
+	&__price
+		color: $colorTitle
+		font-size: 25px
+		font-weight: 700
+		letter-spacing: 1.5px
