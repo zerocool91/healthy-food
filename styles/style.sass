@@ -19,10 +19,16 @@ header
 		font-weight: 700
 		text-decoration: none
 		color: #ebae4c
-		line-height: 45px
+		line-height: 34px
 		letter-spacing: 1.25px
-		display: block
-		text-align: right
+		display: flex
+		justify-content: flex-end
+		margin-top: 6px
+		margin-bottom: -6px
+		&::before
+			content: url('../img/Delivery_Icon.png')
+			display: inline-block
+			margin-right: 20px
 
 .main-menu
 	margin: 0
@@ -39,7 +45,7 @@ header
 			color: $colorTitle
 
 .hero
-	height: 824/16*1rem
+	height: 826/16*1rem
 	background: radial-gradient(rgba(98,97,146,1), rgba(63,62,101,1))
 	+flex
 	flex-direction: column
@@ -56,9 +62,9 @@ header
 
 .our-story
 	text-align: center
-	padding: 141px 0 113px
+	padding: 140px 0 107px
 	&__content
-		margin: 34px auto 60px
+		margin: 34px auto 65px
 		max-width: 1014px
 
 .section-title
@@ -99,7 +105,7 @@ header
 	line-height: 33px
 	letter-spacing: 2.67px
 	color: $colorTextPrimary
-	padding: 22px 38px
+	padding: 17px 35px
 	border: 1px solid rgba($colorTitle, 0.35)
 	border-radius: 5px
 	line-height: 33.33px
