@@ -11,9 +11,18 @@ body
 
 header
 	position: absolute
-	top: 61px
+	top: 19px
 	width: 100%
 	z-index: 99
+	.phone
+		font-size: 22px
+		font-weight: 700
+		text-decoration: none
+		color: #ebae4c
+		line-height: 45px
+		letter-spacing: 1.25px
+		display: block
+		text-align: right
 
 .main-menu
 	margin: 0
@@ -174,7 +183,8 @@ header
 		margin: 34px auto 0
 		input
 			padding: 20px
-			min-width: 337px
+			max-width: 337px
+			width: 100%
 			font-size: $fsContent
 			color: #3d3d3d
 			margin: 11px
@@ -182,9 +192,11 @@ header
 			border-radius: 5px
 			&:focus
 				border: 1px solid $colorTitle
+				outline: none
 		.submit-button
 			padding: 10px
-			min-width: 377px
+			max-width: 377px
+			width: 100%
 			margin: 11px
 			border: 1px solid $colorTitle
 			border-radius: 5px
@@ -207,7 +219,6 @@ footer
 	.footer-content
 		color: #fff
 		font-size: 21px
-		text-transform: capitalize
 		margin: 7px
 		line-height: 37px
 	.adress
