@@ -1,12 +1,9 @@
-@media (max-width: 835px)
+@media (max-width: 1460px)
 	header
 		nav
 			display: none
 		.logo
 			margin: 0 auto
-
-	.decorative
-		display: none
 	
 	.hero .main-title
 		max-width: 100%
@@ -16,3 +13,14 @@
 	
 	.events .background
 		background: none
+	
+	.wrapper
+		&::before,
+		&::after
+			display: none !important
+		.main-title:after
+			display: none !important
+	
+	.reservation-form
+		justify-content: center !important
+			

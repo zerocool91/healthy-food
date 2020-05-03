@@ -1,21 +1,61 @@
 .decorative
 	position: absolute
 	z-index: 0
-	
-.waffel
-	right: -67px
-	bottom: -349px
-	width: 922px
-	height: 763px
-	background: url('../img/Waffel.png')
-	background-size: cover
-	background-position: 166px 0
-	background-repeat: no-repeat
 
-.tomato
-	width: 274px
-	height: 281px
-	background: url('../img/tomato.png')
-	background-size: cover
-	left: 86px
-	bottom: -284px
+.hero 
+	.wrapper
+		&::before
+			content: url('../img/Waffel.png')
+			display: block
+			position: absolute
+			right: -67px
+			bottom: -350px
+			width: 766px
+			height: 768px
+			overflow: hidden
+		&::after
+			content: url('../img/tomato.png')
+			display: block
+			position: absolute
+			left: 86px
+			bottom: -284px
+			width: 274px
+			height: 281px
+	.main-title
+		position: relative
+		&::after
+			content: url('../img/Tomato_Sauce.png')
+			display: block
+			position: absolute
+			width: 173px
+			height: 170px
+			top: -85px
+			right: -223px
+.our-story
+	.wrapper
+		&::before
+			content: url('../img/orange.png')
+			display: block
+			position: absolute
+			right: 65px
+			top: -41px
+		&::after
+			content: url('../img/orange_2.png')
+			display: block
+			position: absolute
+			bottom: -213px
+			left: 196px
+.reservation .wrapper
+	&::before
+		content: url('../img/tomato_2.png')
+		display: block
+		position: absolute
+		right: 48px
+		top: 116px	
+	&::after
+		content: url('../img/waffle.png')
+		display: block
+		position: absolute
+		left: -10px
+		bottom: -204px
+		z-index: 1
