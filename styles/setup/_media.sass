@@ -5,6 +5,17 @@
 		.main-title::after
 			right: 0
 			top: 300px
+	
+	.menu .section-title_small
+		margin: 0 auto
+		text-align: center
+
+	.background
+		background: none
+		padding: 0
+		text-align: center
+		.section-title_small
+			margin: 0 auto
 
 @media (max-width: 834px)
 	header
@@ -20,6 +31,9 @@
 			margin-left: auto
 			margin-right: auto
 
+@media (max-width: 757px)
+	.reservation-form
+		justify-content: center
 
 @media (max-width: 570px)
 	.wrapper::before,
@@ -31,6 +45,11 @@
 	
 	.hero .main-title::after
 		display: none
+
+	footer .copyright-and-social
+		flex-direction: column
+		.copyright
+			margin-bottom: 15px
 
 @media (max-width: 425px)
 	html
