@@ -12,9 +12,14 @@ body
 	margin: 0 auto
 	position: relative
 
+.container
+	max-width: 1440px
+	width: 100%
+	margin: 0 auto
+
 header
 	position: absolute
-	top: 19px
+	top: 12px
 	width: 100%
 	z-index: 99
 	.phone
@@ -48,7 +53,7 @@ header
 			color: $colorTitle
 
 .hero
-	height: 826/16*1rem
+	height: 825/16*1rem
 	background: radial-gradient(rgba(98,97,146,1), rgba(63,62,101,1))
 	+flex
 	flex-direction: column
@@ -225,9 +230,11 @@ footer
 	background: url('../img/footer-bg.png') center center
 	background-size: cover
 	padding: 106px 0 19px
-	.footer-content
+	.footer-content,
+	.footer-content a
+		text-decoration: none
 		color: #fff
-		font-size: 21px
+		font-size: $fsContent
 		margin: 7px
 		line-height: 37px
 	.adress
