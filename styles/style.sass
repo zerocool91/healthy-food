@@ -1,5 +1,8 @@
 @import setup/_
 
+html
+	font-size: 16px
+
 body
 	+regular
 
@@ -15,7 +18,7 @@ header
 	width: 100%
 	z-index: 99
 	.phone
-		font-size: 22px
+		font-size: $fsPhone
 		font-weight: 700
 		text-decoration: none
 		color: $colorDecorative
@@ -54,7 +57,7 @@ header
 		+title
 		max-width: 395px
 		color: $colorTitle
-		font-size: 116px
+		font-size: $fsMainTitle
 		text-align: right
 		margin-left: 155px
 		position: relative
@@ -242,3 +245,6 @@ footer
 				margin-right: 9px
 			img:hover
 				transform: scale(1.1)
+
+	
+@import setup/_media

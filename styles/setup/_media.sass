@@ -1,26 +1,40 @@
-@media (max-width: 1460px)
+@media (max-width: 1023px)
+	.hero
+		.wrapper::before
+			display: none	
+		.main-title::after
+			right: 0
+			top: 300px
+
+@media (max-width: 834px)
 	header
-		nav
-			display: none
-		.logo
-			margin: 0 auto
+		.phone
+			justify-content: center
+			margin-bottom: 20px
+		.align-justify
+			justify-content: center
 	
-	.hero .main-title
-		max-width: 100%
-		margin-left: 0
-		text-align: center
-		font-size: 70px
+	.hero
+		.main-title
+			text-align: center
+			margin-left: auto
+			margin-right: auto
+
+
+@media (max-width: 570px)
+	.wrapper::before,
+	.wrapper::after
+		display: none !important
+
+	header .main-menu
+		display: none
 	
-	.events .background
-		background: none
+	.hero .main-title::after
+		display: none
+
+@media (max-width: 425px)
+	html
+		font-size: 11px
 	
-	.wrapper
-		&::before,
-		&::after
-			display: none !important
-		.main-title:after
-			display: none !important
-	
-	.reservation-form
-		justify-content: center !important
-			
+	.hero
+		justify-content: flex-end
